@@ -1,5 +1,5 @@
 # The URL and title the site will be built for
-base_url = "https://blog.sinxnis.top"
+base_url = "https://rccubc.github.io"
 title = "SinxniS"
 
 # Whether to automatically compile all Sass files in the sass directory
