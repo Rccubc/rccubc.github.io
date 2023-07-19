@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>SinxniS</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://blog.sinxnis.top/style.css">
+    <link rel="stylesheet" href="https://blog.sinxnis.top/color/green.css">
+
+        <link rel="stylesheet" href="https://blog.sinxnis.top/color/background_dark.css">
+    
+    <link rel="stylesheet" href="https://blog.sinxnis.top/font-hack.css">
+
+        <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="$BASE_URL" style="text-decoration: none;">
+                    <div class="logo">
+                      
+                            RCCUBC&#x27;s Blog
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        
+                <nav class="menu">
+            <ul class="menu__inner">
+                <li class="active"><a href="https://blog.sinxnis.top">blog</a></li>
+            
+                <li><a href="https://blog.sinxnis.top/tags">tags</a></li>
+            
+                <li><a href="https://blog.sinxnis.top/archive">archive</a></li>
+            
+                <li><a href="https://blog.sinxnis.top/about">about me</a></li>
+            
+                <li><a href="https://github.com/rccubc" target="_blank" rel="noopener noreferrer">github</a></li>
+            </ul>
+        </nav>
+    
+    
+        
+    </header>
+    
+
+    <div class="content">
+        
+    <div class="post">
+        
+    <h1 class="post-title"><a href="https://blog.sinxnis.top/windos-update-part-1/">Windows Update (part 1)</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2023-01-26
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://blog.sinxnis.top/tags/windows/">#Windows</a></span>
+    
+
+        
+        <div class="post-content">
+            <h2 id="bu-tong-lei-xing-de-windows-geng-xin">不同类型的 Windows 更新</h2>
+<h4 id="tl-dr">TL; DR</h4>
+<table><thead><tr><th style="text-align: left">类别</th><th>更新内容</th><th>特殊点</th></tr></thead><tbody>
+<tr><td style="text-align: left">定义更新</td><td>更新 Windows Defender 病毒库</td><td>KB2267602<sup class="footnote-reference"><a href="#1">1</a></sup></td></tr>
+<tr><td style="text-align: left">驱动程序更新</td><td>更新硬件驱动程序</td><td>微软和设备制造商合作提供</td></tr>
+<tr><td style="text-align: left"><strong>质量更新</strong></td><td>小 bug、大漏洞以及 UI 和功能<strong>微改</strong></td><td>单独 KB 编码</td></tr>
+<tr><td style="text-align: left"><strong>功能更新</strong></td><td>Win10 半年更，Win11 一年更</td><td>官方介绍和<strong>独立镜像</strong></td></tr>
+<tr><td style="text-align: left"><em>其他类别</em></td><td>不涉及系统关键功能的更新</td><td>恶意软件删除程序<br />Windows 功能体验包等</td></tr>
+</tbody></table>
+<h4 id="ding-yi-geng-xin">定义更新</h4>
+<p>​ 定义更新其实就是 Windows Defender 的病毒库的更新。</p>
+<h4 id="qu-dong-geng-xin">驱动更新</h4>
+<p>​ 驱动更新用于更新硬件的驱动程序。驱动更新是由微软和设备制造商合作提供。以下是三种收到更新的情况：</p>
+<ol>
+<li>负责任的厂商定期推送</li>
+<li>全新安装 Windows</li>
+<li>检测到新设备</li>
+</ol>
+<h4 id="zhi-liang-geng-xin">==质量更新==</h4>
+<blockquote>
+<p>质量主要包含小修复程序和安全更新。 —— Microsoft Support</p>
+</blockquote>
+<p>​ <strong>质量更新主要负责维护 Windows 大版本更新后的系统体验</strong>，是最重要最常见的一类更新。其内容包括 OOB 更新，月度累积更新和月度更新预览。前两种自动安装，月度更新预览是可选的更新。</p>
+<p>​ 两种月度更新通过名字就可以知道是固定频率为每月一次的更新。</p>
+<ul>
+<li>月度累积更新内容为日常软件维护和修复。</li>
+<li>月度更新预览是下个月即将推送的累积更新的预览版本，主要为 IT 管理员提前测试生产环境设计，因此是可选更新。</li>
+<li>OOB(Out of Band)更新顾名思义是主要更新之外的更新，<strong>它是对重大安全漏洞的及时修复，会被及时推送</strong>，没有固定的更新频率。</li>
+</ul>
+<h4 id="gong-neng-geng-xin">==功能更新==</h4>
+<blockquote>
+<p>功能更新包括<strong>新功能</strong>以及潜在的修复程序和安全更新。—— Microsoft Support</p>
+</blockquote>
+<p>​ 功能更新的更新频率固定，Win10 半年更，Win11 一年更。功能更新没有自己的 KB 代号，但是拥有官方介绍文章和<strong>ISO 镜像</strong>，可以理解为一个大版本更新。每个新版本都有一个支持周期，在支持周期内的该版本会收到质量更新。例如 20H2，21H1 这些版本就是在功能更新中变更的。</p>
+<h4 id="qi-ta-lei-bie"><em>其他类别</em></h4>
+<p>​ Windows 功能体验包(Windows Feature Experience Pack)和恶意软件删除程序等不涉及系统关键功能的更新都被分类在其他类别下。这些更新大都独立于操作系统，所以可以单独推送它们的更新。</p>
+<hr />
+<div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
+<p>微软知识库(Microsoft Knowledge Base, KB)，即微软 Support 帮助网站。KB 后面的数字是其中的帮助文档的代号。</p>
+</div>
+
+        </div>
+
+        
+    </div>
+
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>© 
+    2023
+ RCCUBC</span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>
